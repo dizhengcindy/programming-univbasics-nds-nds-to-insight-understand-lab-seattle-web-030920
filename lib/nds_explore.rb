@@ -16,7 +16,7 @@ def print_first_directors_movie_titles
     while col<directors_database[row].length do
       index = 0 
       while index < directors_database[row][col].length do
-        directors_database[row][col][index]
+       directors_database[row][col][index]
       end
     end
   end
