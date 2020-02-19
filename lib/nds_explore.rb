@@ -10,17 +10,15 @@ end
 pp directors_database
  
 def print_first_directors_movie_titles
-  row = 0
-  while row<directors_database.length do
     col = 0 
-    while col<directors_database[row].length do
+    while col<directors_database[0].length do
       index = 0 
-      while index < directors_database[row][col].length do
-       puts "#{directors_database[row][col][index]}"
+      inner_len = directors_database[0][col].length
+      while index < inner_len do
+       puts "#{directors_database[0][col][index]}"
        index += 1
       end
       col +=1
     end
-    row =+1
-  end
+    
 end
