@@ -10,6 +10,14 @@ end
 pp directors_database
  
 def print_first_directors_movie_titles
-  
-  directors_database[0]
+  row = 0
+  while row<directors_database.length do
+    col = 0 
+    while col<directors_database[row].length do
+      index = 0 
+      while index < directors_database[row][col].length do
+        directors_database[row][col][index]
+      end
+    end
+  end
 end
